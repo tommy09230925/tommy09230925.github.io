@@ -1,0 +1,29 @@
+body{
+    background: #333;
+    /*background-image: linear-gradient(120deg,#3498db,#8e44ad);*/
+}
+.card{
+    margin-top: 20px;
+    margin-left: 30px;
+    /*display:inline-flex;
+    flex-wrap: wrap;
+    border: outset;*/
+    border: 1.1px outset;
+}
+.row{
+    justify-content: center;
+    align-items: center;
+}
+.card-body{
+    background-image: linear-gradient(120deg,#3498db,#8e44ad);
+    opacity:0.9;
+}
+h5{
+    color: #ecf0f1;
+    /*font-family:'標楷體';*/
+    font-family: 'Noto Serif TC', serif;
+}
+p{
+    color: #ecf0f1;
+   font-family: 'Noto Sans TC', sans-serif;
+}
