@@ -9,15 +9,15 @@
     <title>script</title>
 </head>
 <body>
-    <h1><mark>台 灣 各 地 美 景</mark></h1>
-    <div class="blogs owl-carousel">
+    <h1 id="toggle"><mark>台 灣 各 地 美 景</mark></h1>
+    <div class="blogs owl-carousel" id="blur">
         <div class="blog">
             <img src="80529703_1365806393591548_6176178553789349888_n.jpg" alt="">
             <div class="blog-description">
                 <div class="categorie">Landscape</div>
                 <h2 class="title">新北板橋耶誕城夜景</h2>
                 <div class="data">2019 12 28</div>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" onclick="toggle()" class="btn">Read More</a>
             </div>
         </div>
         <div class="blog">
@@ -26,7 +26,7 @@
                 <div class="categorie">Landscape</div>
                 <h2 class="title" style="letter-spacing: 1px">新北板橋耶誕城夜景</h2>
                 <div class="data">2019 12 28</div>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn" onclick="toggle1()">Read More</a>
             </div>
         </div>
         <div class="blog">
@@ -35,7 +35,7 @@
                 <div class="categorie">Landscape</div>
                 <h2 class="title">板橋耶誕城百貨公司夜景</h2>
                 <div class="data">2019 12 28</div>
-                <a href="#" class="btn">Read More</a>
+                <a href="#" class="btn" onclick="toggle2()">Read More</a>
             </div>
         </div>
         <div class="blog">
@@ -186,7 +186,7 @@
             <img src="84060994_1393291450843042_5801267968008519680_n.jpg" alt="">
             <div class="blog-description">
                 <div class="categorie">Landscape</div>
-                <h2 class="title">勝興車站自然風光景觀</h2>
+                <h2 class="title">高雄衛武營歌劇院</h2>
                 <div class="data">2019 12 28</div>
                 <a href="#" class="btn">Read More</a>
             </div>
@@ -310,6 +310,37 @@
         </div>
         
     </div>
+    <div id="popup">
+        <h2>新北耶誕成介紹</h2>
+        <p>2019新北耶誕城即於11/15正式啟航，連續歡慶48天直到2020年1月1日！這次的新北耶誕城以魔法耶誕城為主題開城，首創3個第一，不僅在主燈投影面積為歷年第一大，就連唯美的打卡天橋也是歷年第一多，最特別的就是這次新北耶誕城擁有全球唯一的雙塔雷射光雕秀，這麼讚的耶誕活動，喜愛拍照的你更是不容錯過！</p>
+        <a href="" onclick="toggle()">close</a>
+    </div>
+    <div id="popup1">
+        <h2>2019~2020新北市歡樂耶誕城 資訊</h2>
+        <p>活動期間：2019/11/15(五)~2020/01/01(三)
+
+            活動地點：新北板橋市民廣場、站前廣場及萬坪公園 
+
+            1.新北市市民廣場 (新北市板橋區中山路一段161號) 捷運2號或3A號出口
+
+            2.板橋車站站前廣場 (新北市板橋區縣民大道二段7號) 捷運3號出口
+
+            3.萬坪公園 (新北市板橋區新府路1A號) 捷運1號出口
+
+            交通方式：捷運板南線－板橋站</p>
+        <a href="" onclick="toggle1()">close</a>
+    </div>
+    <div id="popup2">
+        <h2>2019~2020新北市歡樂耶誕城 資訊</h2>
+        <p>2019新北歡樂耶誕城今年打造3大燈區、8座燈飾天橋
+
+        有「桑塔熊的魔法小鎮」、「新北魔法森林」，以及「卡娜赫拉的閃閃耶誕夢」3大燈區
+
+        2019的完整介紹交通捷運、演唱會藝人、重點燈區、32樓觀景台、參觀路線圖等等
+
+        新北耶誕城交通可以搭到捷運板橋站，順便品嘗新北耶誕城周邊美食。</p>
+        <a href="" onclick="toggle2()">close</a>
+    </div>
 <script type="text/javascript">
     $(".owl-carousel").owlCarousel({
         items: 2,
@@ -318,6 +349,54 @@
         center: true,
         dots: false
     });
+    function toggle(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+    function toggle1(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup1 = document.getElementById('popup1');
+        popup1.classList.toggle('active')
+    }
+    function toggle2(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+    function toggle3(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
+    function toggle4(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup2 = document.getElementById('popup2');
+        popup2.classList.toggle('active')
+    }
+    function toggle5(){
+        var blur = document.getElementById('blur');
+        blur.classList.toggle('active') 
+        var toggle = document.getElementById('toggle');
+        toggle.classList.toggle('active') 
+        var popup = document.getElementById('popup');
+        popup.classList.toggle('active')
+    }
 </script>
 </body>
 </html>
