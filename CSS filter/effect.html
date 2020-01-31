@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1 shrink-to-fit=yes">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container" id="blur">
+        <div class="content">
+            <h2 style="text-align: center;">高雄衛武營歌劇院</h2>
+            <img src="photo.jpg">
+            <a href="#" onclick="toggle()">Read more</a>
+        </div>
+    </div>
+    <div id="popup">
+        <h2>高雄衛武營歌劇院</h2>
+        <p>主要作為歌劇、大型戲劇、舞蹈及跨領域等表演型式的大型舞台，規模為全臺灣最大。舞台的機械設備完全自動化，觀眾席則採馬蹄形座席安排，是全臺灣首座以大型電腦輔助運作的歌劇院。歌劇院之所以稱為「歌劇院」，不是因為演出歌劇，而是以「歌劇」指稱包括戲劇、舞蹈、音樂...等表演藝術總和。觀眾席採馬蹄形座席安排，一樓觀眾席以矮牆區分為四個區塊，二至三樓兩層看台連續的水平線條帶來連貫性與韻律感。
+        舞台前方可升降之樂團樂池總面積約為80平方公尺，可採完整樂團編制演奏大型歌劇如理查‧史特勞斯《玫瑰騎士》等作品。舞台機械設備為全自動系統，以大型電腦輔助運作；整體由荷蘭劇場顧問設計規劃，並由奧地利廠商Waagner-Biro進行施工細部發展及製造安裝。</p>
+        <a href="#" onclick="toggle()">close</a>
+    </div>
+<script type="text/javascript">
+    function toggle(){
+        var blur =document.getElementById('blur');
+        blur.classList.toggle('active')
+        var popup =document.getElementById('popup');
+        popup.classList.toggle('active')
+}
+    
+</script>
+</body>
+</html>
