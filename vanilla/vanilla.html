@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="vanilla.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <div class="iconBox active" data-id="content1">
+                <img src="iconfinder_HTML_Logo_65687.png" width="150" height="160">
+            </div>
+            <div class="iconBox" data-id="content2">
+                <img src="33-512.png" width="150" height="160">
+            </div>
+            <div class="iconBox" data-id="content3">
+                <img src="29-512.png" width="150" height="160">
+            </div>
+            <div class="iconBox" data-id="content4">
+                <img src="iconfinder_1_1724117.png" width="150" height="160">
+            </div>
+        </div>
+        <div class="content">
+            <div class="contentBx active" id="content1">
+                <div>
+                    <div class="text">
+                        <h2>HTML5</h2>
+                        <p>HTML5是HTML最新的修訂版本，由万维网联盟（W3C）于2014年10月完成標準制定。 目標是取代1999年所制定的HTML 4.01和XHTML 1.0標準，以期能在網際網路應用迅速發展的時候，使網路標準達到符合當代的網路需求。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content2">
+                <div>
+                    <div class="text">
+                        <h2>CSS</h2>
+                        <p>階層式樣式表（英語：Cascading Style Sheets，縮寫：CSS；又稱串樣式列表、級聯樣式表、串接樣式表、層疊樣式表）是一種用來為結構化文件（如HTML文件或XML應用）添加樣式（字型、間距和顏色等）的電腦語言，由W3C定義和維護。</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content3">
+                <div>
+                    <div class="text">
+                        <h2>PHP</h2>
+                        <p>PHP（全稱：PHP：Hypertext Preprocessor，即「PHP：超文字預處理器」）是一種開源的通用電腦手稿語言，尤其適用於網路開發並可嵌入HTML中使用。PHP的語法借鑑吸收C語言、Java和Perl等流行電腦語言的特點，易於一般程式設計師學習。PHP的主要目標是允許網路開發人員快速編寫動態頁面，但PHP也被用於其他很多領域。[1]</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contentBx" id="content4">
+                <div>
+                    <div class="text">
+                        <h2>JAVASCRIPT</h2>
+                        <p>JavaScript（通常縮寫為JS）是一種進階的、直譯的程式語言[5]。JavaScript是一門基於原型、函式先行的語言[6]，是一門多範式的語言，它支援物件導向編程，指令式程式設計，以及函式語言程式設計。它提供語法來操控文字、陣列、日期以及正規表示式等，不支援I/O，比如網路、儲存和圖形等，但這些都可以由它的宿主環境提供支援。它已經由ECMA（歐洲電腦製造商協會）透過ECMAScript實作語言的標準化[5]。它被世界上的絕大多數網站所使用，也被世界主流瀏覽器（Chrome、IE、Firefox、Safari、Opera）支援。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script type="text/javascript">
+    var iconBox = document.querySelectorAll('.iconBox');
+    var contentBx = document.querySelectorAll('.contentBx');
+    for(var i=0; i<iconBox.length; i++){
+        iconBox[i].addEventListener('mouseover',function(){
+            for (var i = 0; i<contentBx.length; i++) {
+                   contentBx[i].className='contentBx';
+                 }
+                 document.getElementById(this.dataset.id).className='contentBx active';
+                 for (var i = 0; i<iconBox.length; i++) {
+                   iconBox[i].className='iconBox';
+                 }
+                 this.className='iconBox active';
+        })
+    }
+</script>
+</body>
+</html>
