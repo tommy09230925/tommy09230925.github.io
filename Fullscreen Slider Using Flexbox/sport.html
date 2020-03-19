@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css flex Slidershow</title>
+</head>
+<body>
+    <section>
+    <div class="slide">
+        <div class="content">
+            <h2>勝興車站</h2>
+            <p>盛興小火車附近美景，依山傍水，綠意盎然，河流清澈，十分美麗</p>
+        </div>    
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h2>高雄愛河</h2>
+            <p>高雄愛河美景，燈火通明，水波泛起，波光粼粼，十分美麗</p>
+        </div>    
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h2>高雄愛河</h2>
+            <p>高雄愛河地標，人來人往，車水馬龍，遊客絡繹不絕，十分熱鬧</p>
+        </div>    
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h2>高雄夜景</h2>
+            <p>高雄三商百貨，高樓聳立，店家林立，遊人如織，十分熱鬧</p>
+        </div>    
+    </div>
+    <div class="slide">
+        <div class="content">
+            <h2>勝興鐵道</h2>
+            <p>盛興小火車鐵道懷舊風景，可以搭乘小火車，享受自然風光。</p>
+        </div>    
+    </div>
+    </section>
+<style type="text/css">
+    @import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+    *{
+        margin: 0;
+        padding:0;
+        box-sizing: border-box;
+        font-family: 'Poppins',sans-serif;
+    }
+    section
+    {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        border:2px solid #000;
+        
+    }
+    section .slide
+    {
+        position:relative;
+        background: #0f0;
+        height: 100%;
+        flex: 1;
+        border-right: 2px solid #000;
+        overflow: hidden;
+        transition: 0.5s ease-in-out; 
+    }
+    section .slide:last-child{
+        border-right: none;
+    }
+    section .slide:hover
+    {
+        flex-grow: 5;
+
+    }
+
+    section .slide:nth-child(1){
+        background: url(rr.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .slide:nth-child(2){
+        background: url(iriver.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .slide:nth-child(3){
+        background: url(s.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .slide:nth-child(4){
+        background: url(df.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    section .slide:nth-child(5){
+        background: url(fd.jpg);
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    section .slide .content{
+        position: absolute;
+        flex: 5;
+        bottom: -3%;
+        margin: 40px;
+        padding:15px;
+        background: #333333ca;
+        color:#fff;
+        visibility: hidden;
+        opacity: 0;
+        transition: 0s;
+        transform: translateY(100px);
+    }
+    section .slide:hover .content{
+        visibility: visible;
+        opacity: 1;
+        transition: 0.5s;
+        transition-delay: 0.5s;
+        transform: translateY(0);
+    }
+
+</style>
+</body>
+</html>
